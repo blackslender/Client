@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Chat">
+   <children>
+      <TextArea layoutX="8.0" layoutY="258.0" prefHeight="48.0" prefWidth="312.0" AnchorPane.bottomAnchor="8.0" />
+      <Button layoutX="327.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="Send" AnchorPane.bottomAnchor="31.0" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="8.0" layoutY="34.0" prefHeight="248.0" prefWidth="368.0" AnchorPane.topAnchor="8.0">
+         <content>
+            <VBox prefHeight="244.0" prefWidth="356.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="327.0" layoutY="288.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="..." />
+   </children>
+</AnchorPane>

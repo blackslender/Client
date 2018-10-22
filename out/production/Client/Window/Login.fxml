@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="Controller.Login"
+          alignment="CENTER"
+            fx:id="rootPane">
+    <padding>
+        <Insets top="15" bottom="10" left="15" right="15"/>
+    </padding>
+    <children>
+        <Label text="Username:"
+               GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label text="Password:"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField  fx:id="usernameField"
+                GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <PasswordField fx:id="passwordField"
+                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"
+                alignment="CENTER" prefWidth="${rootPane.width}">
+            <padding>
+                <Insets top="10" bottom="0" left="10" right="10"/>
+            </padding>
+            <Button fx:id="loginButton" defaultButton="true" text="Login" onAction="#login"/>
+            <Button fx:id="cancelButton" cancelButton="true" text="Cancel" onAction="#cancel"/>
+        </HBox>
+    </children>
+
+
+</GridPane>

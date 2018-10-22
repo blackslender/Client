@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.geometry.Insets?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      onMouseReleased="#startChatSession" prefHeight="52.0" prefWidth="256.0" style="-fx-background-color: Bisque;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FriendField"
+onMouseEntered="#lighton" onMouseExited="#lighton" fx:id="box" >
+    <children>
+        <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true"/>
+        <VBox prefHeight="52.0" prefWidth="192.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="192.0">
+                    <children>
+                        <Circle fx:id="bulb" fill="#1fff26" radius="4.0" stroke="BLACK" strokeType="INSIDE">
+                            <HBox.margin>
+                                <Insets right="10.0"/>
+                            </HBox.margin>
+                        </Circle>
+                        <Label fx:id="friendname" prefHeight="15.0" text="Username"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="status" editable="false" prefHeight="24.0" prefWidth="182.0" promptText="Status"/>
+            </children>
+            <padding>
+                <Insets left="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+</HBox>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="512.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Main">
+   <children>
+      <HBox prefHeight="64.0" prefWidth="256.0" style="-fx-background-color: LightGreen;" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="64.0" prefWidth="192.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="192.0">
+                     <children>
+                        <Circle fill="#1fff26" radius="4.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="usernameLabel" text="Username" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="statusField" onAction="#setStatus" promptText="Status" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <MenuBar layoutY="74.0" prefHeight="24.0" prefWidth="256.0" AnchorPane.topAnchor="74.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Messenger">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Contact">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Action">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <content>
+            <VBox fx:id="friendZone" prefHeight="1024" prefWidth="256.0" style="-fx-background-color: Cornsilk;" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="64.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" />
+   </children>
+</AnchorPane>
