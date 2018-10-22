@@ -142,7 +142,13 @@ public class Main extends Application {
     }
 
     public void setOnline(String usr) {
+        if (friendList==null) return;
+        System.out.println("this line");
+        System.out.println(usr);
+        System.out.println(friendList);
         Map temp = (Map) friendList.get(usr);
+
+            System.out.println(temp);
         temp.put("online", "online");
         setFriendlist(friendList);
     }

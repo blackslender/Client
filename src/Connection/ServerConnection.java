@@ -11,7 +11,7 @@ public class ServerConnection {
     private static Socket socket;
     private static Window.Login loginWindow;
     private static Window.Main mainWindow;
-    public static final String serverIP = "localhost";
+    public static final String serverIP = "192.168.2.106";
     public static final int port = 4567;
     public static Thread listenThread;
     private static BufferedReader reader;
